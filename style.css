@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body {
     margin: 0;
     display: flex;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -11,19 +14,16 @@ body {
     background-color: #fff;
 }
 
+.backlit {
+    background-color: #000;
+    color: #fff;
+}
+
 section {
     width: 70%;
     margin-left: 2%;
     margin-top: 200px;
-    padding-bottom: 3%;
-
-}
-
-aside {
-    width: 30%;
-    margin-right: 2%;
-    margin-top: 200px;
-}
+    }
 
 .card {
     border: 1px solid black;
@@ -40,3 +40,92 @@ aside {
 .card .text {
     padding: 16px;
 }
+
+.card span {
+    background-color: #000;
+    color: #fff;
+}
+
+#date {
+    color: grey;
+    background-color: #fff;
+}
+
+button {
+    background-color: #fff;
+    height: 40px;
+    width: 15%;
+    text-align: center;
+}
+
+.comment {
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+aside {
+    width: 30%;
+    margin-right: 2%;
+    margin-top: 200px;
+}
+
+.card_posteos {
+    border: 1px solid black;
+    margin: 16px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0);
+}
+
+.post_header {
+    background-color: rgb(236, 244, 245);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.posteo {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    height: 80px;
+}
+
+.posteo_ultimo {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom:16px; 
+}
+
+.image_posteo {
+    display: inline-block;
+}
+.texto_posteo {
+    display: inline-block;
+}
+
+.description {
+    font-size: smaller;
+}
+
+.posteo_etiquetas span {
+    font-size: smaller;
+}
+
+.posteo_etiquetas {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 30px;
+    height: 130px;
+}
+
+/*#footer {
+    position: absolute;
+    bottom:0;
+    height: 180px;
+    width: 100%;
+    background-color: rgba(160, 150, 150, 0.63);
+    
+}*/
