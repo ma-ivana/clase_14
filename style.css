@@ -4,15 +4,20 @@ body {
     margin: 0;
     display: flex;
     font-family: 'Raleway', sans-serif;
+    align-items: stretch;
+    
 }
 
 .header {
     position: absolute;
+    top: 0;
     text-align: center;
     height: 180px;
     width: 100%;
     background-color: #fff;
 }
+
+
 
 .backlit {
     background-color: #000;
@@ -23,6 +28,9 @@ section {
     width: 70%;
     margin-left: 2%;
     margin-top: 200px;
+    min-height: 100%;
+    position: relative;
+    align-items: stretch;
     }
 
 .card {
@@ -68,6 +76,9 @@ aside {
     width: 30%;
     margin-right: 2%;
     margin-top: 200px;
+    min-height: 100%;
+    position: relative;
+    align-items: stretch;
 }
 
 .card_posteos {
@@ -121,11 +132,14 @@ aside {
     height: 130px;
 }
 
-/*#footer {
+#footer {
     position: absolute;
-    bottom:0;
-    height: 180px;
-    width: 100%;
+    top: 1800px;
+    height: 80px;
+    right: 0;
+    left: 0;
+    z-index: -1;
     background-color: rgba(160, 150, 150, 0.63);
     
-}*/
+}
+
