@@ -1,122 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="header">
-        <h1>MI BLOG</h1>
-        <p>Bienvenidos al blog de <span class="backlit">&nbsp;avatar&nbsp;</span></p>
+      <h1>MI BLOG</h1>
+      <p>
+        Bienvenidos al blog de <span class="backlit">&nbsp;avatar&nbsp;</span>
+      </p>
     </div>
-
-    
-    <section> 
-    <div class="card">
-        <img src="img/woods.jpg">
-        <div class="text">
+    <!-- si hubiera un contenedor del section y el aside, tranquilamente se podría hacer un display: flex y quedarían ordenados uno al lado del otro-->
+    <div class="container_noe">
+      <section>
+        <div class="card">
+          <img src="img/woods.jpg" />
+          <div class="text">
             <h3>Bosque</h3>
-            <p>Descripción del título, <span id="date">1 de septiembre de 2019</span></p>
-            <p>Lorem ipsum amor sit amet consectetur adipisicing elit. Alias animi, amores, quia magnam repellat error sunt explicabo ea aut necessitatibus architecto, atque eos aliquid magni quo amorem. Nobis totam eos odit error architecto possimus laborum libero quisquam autem eveniet nisi maxime quis, iusto nemo et pariatur voluptates quam harum amor!</p>
-            <button type="button">MÁS INFO >></button>
-            <div class="comment">
+            <p>
+              Descripción del título,
+              <span id="date">1 de septiembre de 2019</span>
+            </p>
+            <p>
+              Lorem ipsum amor sit amet consectetur adipisicing elit. Alias
+              animi, amores, quia magnam repellat error sunt explicabo ea aut
+              necessitatibus architecto, atque eos aliquid magni quo amorem.
+              Nobis totam eos odit error architecto possimus laborum libero
+              quisquam autem eveniet nisi maxime quis, iusto nemo et pariatur
+              voluptates quam harum amor!
+            </p>
+            <div class="card_ultima_fila_noe">
+              <button type="button">MÁS INFO >></button>
+              <div class="comment">
                 <p>Comentarios <span>&nbsp;0&nbsp;</span></p>
+              </div>
             </div>
-            
+          </div>
         </div>
-    </div>
 
-    <div class="card">
-        <img src="img/bridge.jpg">
-        <div class="text">
+        <div class="card">
+          <img src="img/bridge.jpg" />
+          <div class="text">
             <h3>Título</h3>
-            <p>Descripción del título, <span id="date">30 de julio de 2019</span></p>
-            <p>Lorem ipsum amor sit amet consectetur adipisicing elit. Alias animi, amores, quia magnam repellat error sunt explicabo ea aut necessitatibus architecto, atque eos aliquid magni quo amorem. Nobis totam eos odit error architecto possimus laborum libero quisquam autem eveniet nisi maxime quis, iusto nemo et pariatur voluptates quam harum amor!</p> 
-            <button type="button">MÁS INFO >></button>
-            <div class="comment">
+            <p>
+              Descripción del título, <span id="date">30 de julio de 2019</span>
+            </p>
+            <p>
+              Lorem ipsum amor sit amet consectetur adipisicing elit. Alias
+              animi, amores, quia magnam repellat error sunt explicabo ea aut
+              necessitatibus architecto, atque eos aliquid magni quo amorem.
+              Nobis totam eos odit error architecto possimus laborum libero
+              quisquam autem eveniet nisi maxime quis, iusto nemo et pariatur
+              voluptates quam harum amor!
+            </p>
+            <div class="card_ultima_fila_noe">
+              <button type="button">MÁS INFO >></button>
+              <div class="comment">
                 <p>Comentarios <span>&nbsp;2&nbsp;</span></p>
-            </div>  
-        </div>    
-    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </section>
-
-<aside>   
-    <div class="card">
-        <img src="img/avatar_g.jpg">
-        <div class="text">
+      <aside>
+        <div class="card">
+          <img src="img/avatar_g.jpg" />
+          <div class="text">
             <h3>Título</h3>
-            <p>Lorem ipsum amor sit amet, consectetur adipisicing elit. Eveniet eos, itaque error ducimus fuga iure sequi sapiente tenetur blanditiis exercitationem delectus qui, maiores, quasi a.</p>
-            
+            <p>
+              Lorem ipsum amor sit amet, consectetur adipisicing elit. Eveniet
+              eos, itaque error ducimus fuga iure sequi sapiente tenetur
+              blanditiis exercitationem delectus qui, maiores, quasi a.
+            </p>
+          </div>
         </div>
-    </div>
 
-    <div class="card_posteos">
-        <div class="post_header">
+        <div class="card_posteos">
+          <div class="post_header">
             <h4>Posteos populares</h4>
-        </div>
-            <div class="posteo">
-                <div class="image_posteo">
-                    <img src="img/workshop.jpg">
-                </div>
-                <div class="texto_posteo">
-                    <span>Post 1</span> <br>
-                    <span class="description">Descripción post 1</span>
-                </div>
-            </div>
-        <hr>
-        <div class="posteo">
+          </div>
+          <div class="posteo">
             <div class="image_posteo">
-                <img src="img/gondol.jpg">
+              <img src="img/workshop.jpg" />
             </div>
             <div class="texto_posteo">
-                <span>Post 2</span> <br>
-                <span class="description">Descripción post 2</span>
+              <span>Post 1</span> <br />
+              <span class="description">Descripción post 1</span>
             </div>
-        </div>
-        <hr>        
-        <div class="posteo">
+          </div>
+          <hr />
+          <div class="posteo">
             <div class="image_posteo">
-                <img src="img/skies.jpg">
+              <img src="img/gondol.jpg" />
             </div>
             <div class="texto_posteo">
-                <span>Post 3</span> <br>
-                <span class="description">Descripción post 3</span>
+              <span>Post 2</span> <br />
+              <span class="description">Descripción post 2</span>
             </div>
-            </div>
-        <hr>
-        <div class="posteo_ultimo">
+          </div>
+          <hr />
+          <div class="posteo">
             <div class="image_posteo">
-                <img src="img/rock.jpg">
+              <img src="img/skies.jpg" />
             </div>
             <div class="texto_posteo">
-                <span>Post 4</span> <br>
-                <span class="description">Descripción post 4</span>
+              <span>Post 3</span> <br />
+              <span class="description">Descripción post 3</span>
             </div>
-        </div>
-                       
-    </div>
-                
-    <div class="card_posteos">
-            <div class="post_header">
-                <h4>Etiquetas</h4>
+          </div>
+          <hr />
+          <div class="posteo_ultimo">
+            <div class="image_posteo">
+              <img src="img/rock.jpg" />
             </div>
-        <div class="posteo_etiquetas"> 
-        <span class="backlit">Argentina&nbsp;&nbsp;</span> <span>Buenos Aires&nbsp;&nbsp;</span> <span>Santa Fe&nbsp;&nbsp;</span>
-        <span>Córdoba&nbsp;&nbsp;</span> <span>puentes&nbsp;&nbsp;</span> <span>góndola&nbsp;&nbsp;</span>
-        <span>montañas&nbsp;&nbsp;</span> <span>viajes&nbsp;&nbsp;</span> <span>fotografía&nbsp;&nbsp;</span>
+            <div class="texto_posteo">
+              <span>Post 4</span> <br />
+              <span class="description">Descripción post 4</span>
+            </div>
+          </div>
         </div>
-                           
-    </div>
-</aside>
 
-
-<div id="footer">
-     <p>Powered by X</p>
-</div> -->
-</body>
+        <div class="card_posteos">
+          <div class="post_header">
+            <h4>Etiquetas</h4>
+          </div>
+          <div class="posteo_etiquetas">
+            <span class="backlit">Argentina&nbsp;&nbsp;</span>
+            <span>Buenos Aires&nbsp;&nbsp;</span>
+            <span>Santa Fe&nbsp;&nbsp;</span> <span>Córdoba&nbsp;&nbsp;</span>
+            <span>puentes&nbsp;&nbsp;</span> <span>góndola&nbsp;&nbsp;</span>
+            <span>montañas&nbsp;&nbsp;</span> <span>viajes&nbsp;&nbsp;</span>
+            <span>fotografía&nbsp;&nbsp;</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!--No te olvides que existe el elemento footer-->
+    <div id="footer">
+      <p>Powered by X</p>
+    </div>
+  </body>
 </html>

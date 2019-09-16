@@ -1,145 +1,152 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 body {
-    margin: 0;
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    align-items: stretch;
-    
+  margin: 0;
+  /*    display: flex;*/
+  font-family: "Raleway", sans-serif;
+  /*align-items: stretch; esto en realidad hace que todos los items llenen la totalidad del contenedor, no veo la necesidad de esto en el body.*/
 }
 
 .header {
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*position: relative;
     top: 0;
-    text-align: center;
-    height: 180px;
-    width: 100%;
-    background-color: #fff;
+    text-align: center;*/
+  width: 100%;
+  background-color: #fff;
 }
-
-
 
 .backlit {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
+}
+.container_noe {
+  display: flex; /*ya con esto se acomoda tanto el section como el aside en una "fila"*/
 }
 
+.card_ultima_fila_noe {
+  display: flex;
+  justify-content: space-between;
+}
 section {
-    width: 70%;
-    margin-left: 2%;
-    margin-top: 200px;
-    min-height: 100%;
-    position: relative;
-    align-items: stretch;
-    }
+  width: 68%;
+  /*margin-left: 2%;*/ /*Esto junto con el width sumaria 72% a tener en cuenta siempre, el width total de todo lo que este en "row" puede ser solo 100%*/
+  margin-top: 80px; /* le reduje un poco el margen*/
+  /*min-height: 100%; lo veo innecesario, toda la sección debería tener un minimo de 100% ?*/
+  /*position: relative;
+  align-items: stretch;*/
+}
 
 .card {
-    border: 1px solid black;
-    margin: 16px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0);
-
+  border: 1px solid black;
+  margin: 16px; /*esto aplica margin top-right-bottom y left, se sumaria al margin-left que tien el section*/
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0);
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .card .text {
-    padding: 16px;
+  padding: 16px;
 }
 
 .card span {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 #date {
-    color: grey;
-    background-color: #fff;
+  color: grey;
+  background-color: #fff;
 }
-
+/*si queres que el boton y el comentario te queden en la misma linea, tenes que meter todo dentro de un div, entonces ahí le podes decir algo como space-betweeen y listo, quedaría ordenado todo en linea.*/
 button {
-    background-color: #fff;
-    height: 40px;
-    width: 15%;
-    text-align: center;
+  background-color: #fff;
+  width: 150px;
+  /*height: 40px;
+  width: 15%;
+  text-align: center;*/
 }
 
 .comment {
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: flex-end;
+  padding-bottom: 16px;
+  align-self: baseline; /*lo que hago es que el texto de comments, quede alineado en la misma linea que "MAS INFO"*/
+  /* display: flex;
+  justify-content: flex-end; cuando envolves todo en un div, acá no sería necesario. */
 }
 
 aside {
-    width: 30%;
-    margin-right: 2%;
-    margin-top: 200px;
-    min-height: 100%;
-    position: relative;
-    align-items: stretch;
+  width: 30%;
+  margin-right: 2%; /*esto mas los 30% suman 32, mas lo del section, se va mas de 100%, ojo con eso.*/
+  margin-top: 80px; /*le reduje un poco el margen*/
+  /*min-height: 100%;*/
+  /*position: relative;*/
+  /*align-items: stretch;*/
 }
 
 .card_posteos {
-    border: 1px solid black;
-    margin: 16px;
-    margin-top: 30px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0);
+  border: 1px solid black;
+  margin: 16px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0);
 }
 
 .post_header {
-    background-color: rgb(236, 244, 245);
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+  background-color: rgb(236, 244, 245);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .posteo {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 10px;
-    height: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  height: 80px;
 }
 
 .posteo_ultimo {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 10px;
-    padding-bottom:16px; 
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 16px;
 }
-
-.image_posteo {
-    display: inline-block;
-}
-.texto_posteo {
-    display: inline-block;
+/*con ponerle al contenedor esto, ya se arregla toda la lista sin tener que ir item por item.*/
+.posteo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .description {
-    font-size: smaller;
+  font-size: smaller;
 }
-
+.texto_posteo{
+  padding-left: 20px;
+}
 .posteo_etiquetas span {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .posteo_etiquetas {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 30px;
-    height: 130px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+  height: 130px;
 }
 
 #footer {
-    position: absolute;
-    top: 1800px;
-    height: 80px;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: rgba(160, 150, 150, 0.63);
-    
+  position: absolute;
+  top: 1800px;
+  height: 80px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(160, 150, 150, 0.63);
 }
-
